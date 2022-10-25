@@ -1,0 +1,136 @@
+/* global */
+svg path{
+    fill: currentColor;
+}
+.text-big {
+    font-size: 3rem !important;
+    letter-spacing: 15px !important;
+    font-weight: 500;
+}
+.text-smal {
+    font-size: 1.5rem;
+    letter-spacing: 5px;
+    font-weight: 500;
+}
+.z-index {
+    z-index: 1000;
+}
+.text-brown{
+    color: #9b6754;
+}
+.bg-svg{
+    z-index: -1;
+    color: #9b6754;
+    width: 200px;
+    opacity: 0.3;
+}
+.vh-50{
+    height: 50vh;
+}
+.add-cart{
+    height: 30px;
+}
+.start-75{
+    left: 75%;
+}
+.bg-brown{
+    background-color: #9b6754;
+}
+/* end global */
+/* btn */
+.btn-model {
+    display: inline-block;
+    position: relative;
+    padding: 14px 28px;
+    border: 1px solid transparent;
+    text-transform: uppercase;
+    font-size: 12px;
+    text-align: center;
+    letter-spacing: .2em;
+    font-family: Montserrat, sans-serif;
+    font-weight: 500;
+    background-color: transparent;
+    z-index: 1;
+    -webkit-tap-highlight-color: initial;
+}
+.btn-model::before {
+    -webkit-font-smoothing: antialiased;
+    position: absolute;
+    content: "";
+    left: 0;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    -webkit-transform: scale(1, 1);
+    transform: scale(1);
+    -webkit-transform-origin: left center;
+    transform-origin: left center;
+    z-index: -1;
+    transition: transform .45s cubic-bezier(.785, .135, .15, .86), -webkit-transform .45s cubic-bezier(.785, .135, .15, .86);
+}
+.btn-model:hover::before {
+    -webkit-transform-origin: right center;
+    transform-origin: right center;
+    -webkit-transform: scale(1, 0);
+    transform: scaley(0);
+}
+
+.btn-brown {
+    color: #fff;
+    border-color: #471c0c;
+}
+
+.btn-brown::before {
+    background-color: #471c0c;
+}
+
+.btn-brown:hover {
+    color: #471c0c;
+}
+
+.btn-w {
+    color: #471c0c;
+    border-color: #fff;
+}
+
+.btn-w::before {
+    background-color: #fff;
+}
+
+.btn-w:hover {
+    color: #fff;
+}
+/* end btn */
+/* navbars */
+.center-absolute {
+    left: calc(50vw - 100px);
+}
+.text-nav {
+    font-size: 1rem;
+    letter-spacing: 5px;
+}
+.nav-svgs{
+    height: 30px;
+}
+.navbar-hover .nav{
+    max-height: 50vh;
+}
+.top-30{
+    top: 130px;
+}
+/* end navbars */
+/* header */
+.carousel-image {
+    height: calc(100vh - (100vw/11));
+    width: 100vw;
+    object-fit:scale-down;
+    object-position: center;
+    background-color: #9b6754;
+}
+
+#wave{
+    color: #9b6754;
+}
+/* end header */
